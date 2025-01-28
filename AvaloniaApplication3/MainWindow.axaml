@@ -1,0 +1,67 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
+        x:Class="AvaloniaApplication3.MainWindow"
+        Title="AvaloniaApplication3">
+	<Grid RowDefinitions="72,*" ShowGridLines="True">
+		<StackPanel Grid.Row="0" Background="Black">
+			<Grid ColumnDefinitions="100,140,*" ShowGridLines="True">
+				<Grid.Styles>
+					<Style Selector="Button:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+						<Setter Property="Background" Value="Gray" />
+					</Style>
+					
+				</Grid.Styles>
+				<StackPanel Margin="28 19" >
+					<Image RenderOptions.BitmapInterpolationMode="HighQuality" Source="C:\Users\prdb\Downloads\222.png" 
+						   Width="30" Height="30" HorizontalAlignment="Left" />
+				</StackPanel>
+				
+				<Image Grid.Column="1" HorizontalAlignment="Left" Margin="15 -15" Source="C:\Users\prdb\Downloads\123.png" Width="100" Height="100"></Image>
+				<Button Background="Black" Width="20" Height="20" HorizontalAlignment="Right" Margin="24 0">
+					<Panel>
+						<Image Source="C:\Users\prdb\Downloads\rrtt.png" Width="15" Height="15">
+							
+						</Image>
+					</Panel>
+					<Button.Flyout >
+						<MenuFlyout Placement="Bottom">
+							<MenuItem Header="Item1">
+							</MenuItem>
+						</MenuFlyout>
+					</Button.Flyout>
+				</Button>
+				<StackPanel Orientation="Horizontal" Grid.Column="2" VerticalAlignment="Top" Margin="0 12">
+					<Button Content="Discover"  FontWeight="Bold" Grid.Column="1" Foreground="White" Padding="-1" Background="Black"
+						HorizontalAlignment="Right" FontSize="16" Margin="16 10 16 10"></Button>
+					<Button Content="My Library"  FontWeight="Bold" Grid.Column="2" Foreground="White" Padding="-1" Background="Black"
+							HorizontalAlignment="Left" FontSize="16" Margin="16 10 16 10"></Button>
+					<Button Content="Create"  FontWeight="Bold" Grid.Column="2" Foreground="White" Padding="-1" Background="Black"
+							HorizontalAlignment="Right" FontSize="16" Margin="16 10 16 10"></Button>
+					<Button Background="Black" Width="20" Height="20" HorizontalAlignment="Right" Margin="-10" Grid.Column="2">
+						<Panel>
+							<Image Source="C:\Users\prdb\Downloads\rrtt.png" Width="15" Height="15">
+							</Image>
+						</Panel>
+						<Button.Flyout >
+							<MenuFlyout Placement="Bottom">
+								<MenuItem Header="Item1">
+								</MenuItem>
+							</MenuFlyout>
+						</Button.Flyout>
+					</Button>
+					<Button Content="Item Shop"  FontWeight="Bold" Grid.Column="2" Foreground="White" Padding="-1" Background="Black"
+							HorizontalAlignment="Right" FontSize="16" Margin="16 10 16 10"></Button>
+					<Button Content="Battle Pass"  FontWeight="Bold" Grid.Column="2" Foreground="White" Padding="-1" Background="Black"
+							HorizontalAlignment="Right" FontSize="16" Margin="16 10 16 10"></Button>
+					<Button Content="News"  FontWeight="Bold" Grid.Column="2" Foreground="White" Padding="-1" Background="Black"
+							HorizontalAlignment="Right" FontSize="16" Margin="16 10 16 10"></Button>
+				</StackPanel>
+			</Grid>
+		</StackPanel>
+	</Grid>
+
+
+</Window>
