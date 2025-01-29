@@ -124,3 +124,4 @@ C:\Users\prdb\Desktop\JDJD\AvaloniaApplication3\AvaloniaApplication3\obj\Debug\n
 C:\Users\prdb\Desktop\JDJD\AvaloniaApplication3\AvaloniaApplication3\obj\Debug\net8.0\Avalonia.EC7B75D9.Up2Date
 C:\Users\prdb\Desktop\JDJD\AvaloniaApplication3\AvaloniaApplication3\obj\Debug\net8.0\AvaloniaApplication3.genruntimeconfig.cache
 C:\Users\prdb\Desktop\JDJD\AvaloniaApplication3\AvaloniaApplication3\obj\Debug\net8.0\ref\AvaloniaApplication3.dll
+C:\Users\prdb\Desktop\JDJD\AvaloniaApplication3\AvaloniaApplication3\obj\Debug\net8.0\AvaloniaApplication3.sourcelink.json

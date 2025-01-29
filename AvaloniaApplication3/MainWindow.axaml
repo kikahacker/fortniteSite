@@ -4,21 +4,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
         x:Class="AvaloniaApplication3.MainWindow"
-        Title="AvaloniaApplication3">
-	<Grid RowDefinitions="72,*" ShowGridLines="True">
-		<StackPanel Grid.Row="0" Background="Black">
-			<Grid ColumnDefinitions="100,140,*" ShowGridLines="True">
+        Title="AvaloniaApplication3"
+		TransparencyLevelHint="AcrylicBlur"
+        Background="Transparent">
+	
+	<Grid RowDefinitions="72" ShowGridLines="True">
+		<StackPanel Grid.Row="0" Background="Black" Opacity="0.9"></StackPanel>
+		<StackPanel Grid.Row="0" >
+			<Grid ColumnDefinitions="100,140,*" >
 				<Grid.Styles>
 					<Style Selector="Button:pointerover /template/ ContentPresenter#PART_ContentPresenter">
 						<Setter Property="Background" Value="Gray" />
 					</Style>
-					
+					<Style Selector="TextBlock.h1">
+						<Setter Property="FontSize" Value="16"/>
+						<Setter Property="FontWeight" Value="Bold"/>
+						<Setter Property="Foreground" Value="White"/>
+						<Setter Property="Margin" Value="16 10 16 10"/>
+						<Style Selector="^:pointerover">
+							<Setter Property="Foreground" Value="Gray"/>
+						</Style>
+					</Style>
 				</Grid.Styles>
 				<StackPanel Margin="28 19" >
 					<Image RenderOptions.BitmapInterpolationMode="HighQuality" Source="C:\Users\prdb\Downloads\222.png" 
 						   Width="30" Height="30" HorizontalAlignment="Left" />
 				</StackPanel>
-				
 				<Image Grid.Column="1" HorizontalAlignment="Left" Margin="15 -15" Source="C:\Users\prdb\Downloads\123.png" Width="100" Height="100"></Image>
 				<Button Background="Black" Width="20" Height="20" HorizontalAlignment="Right" Margin="24 0">
 					<Panel>
@@ -34,13 +45,10 @@
 					</Button.Flyout>
 				</Button>
 				<StackPanel Orientation="Horizontal" Grid.Column="2" VerticalAlignment="Top" Margin="0 12">
-					<Button Content="Discover"  FontWeight="Bold" Grid.Column="1" Foreground="White" Padding="-1" Background="Black"
-						HorizontalAlignment="Right" FontSize="16" Margin="16 10 16 10"></Button>
-					<Button Content="My Library"  FontWeight="Bold" Grid.Column="2" Foreground="White" Padding="-1" Background="Black"
-							HorizontalAlignment="Left" FontSize="16" Margin="16 10 16 10"></Button>
-					<Button Content="Create"  FontWeight="Bold" Grid.Column="2" Foreground="White" Padding="-1" Background="Black"
-							HorizontalAlignment="Right" FontSize="16" Margin="16 10 16 10"></Button>
-					<Button Background="Black" Width="20" Height="20" HorizontalAlignment="Right" Margin="-10" Grid.Column="2">
+					<TextBlock Classes="h1">Discover</TextBlock>
+					<TextBlock Classes="h1">My Library</TextBlock>
+					<TextBlock Classes="h1">Create</TextBlock>
+					<Button Background="Black" Width="20" Height="20" HorizontalAlignment="Right" Margin="-10 0 10 0" Grid.Column="2">
 						<Panel>
 							<Image Source="C:\Users\prdb\Downloads\rrtt.png" Width="15" Height="15">
 							</Image>
@@ -52,16 +60,32 @@
 							</MenuFlyout>
 						</Button.Flyout>
 					</Button>
-					<Button Content="Item Shop"  FontWeight="Bold" Grid.Column="2" Foreground="White" Padding="-1" Background="Black"
-							HorizontalAlignment="Right" FontSize="16" Margin="16 10 16 10"></Button>
-					<Button Content="Battle Pass"  FontWeight="Bold" Grid.Column="2" Foreground="White" Padding="-1" Background="Black"
-							HorizontalAlignment="Right" FontSize="16" Margin="16 10 16 10"></Button>
-					<Button Content="News"  FontWeight="Bold" Grid.Column="2" Foreground="White" Padding="-1" Background="Black"
-							HorizontalAlignment="Right" FontSize="16" Margin="16 10 16 10"></Button>
+					<TextBlock Classes="h1">Item Shop</TextBlock>
+					<TextBlock Classes="h1">Battle Pass</TextBlock>
+					<TextBlock Classes="h1">News</TextBlock>
+					<TextBlock Classes="h1">More</TextBlock>
+					<Button Background="Black" Width="20" Height="20" HorizontalAlignment="Right" Margin="-10 0 10 0" Grid.Column="2">
+						<Panel>
+							<Image Source="C:\Users\prdb\Downloads\rrtt.png" Width="15" Height="15">
+							</Image>
+						</Panel>
+						<Button.Flyout >
+							<MenuFlyout Placement="Bottom">
+								<MenuItem Header="Item1">
+								</MenuItem>
+							</MenuFlyout>
+						</Button.Flyout>
+					</Button>
+					<TextBox Watermark="Search" Width="585" Height="42" CornerRadius="20" Background="Black" BorderBrush="Gray" Padding="10" BorderThickness="1">
+						
+						
+					</TextBox>
+					
 				</StackPanel>
 			</Grid>
 		</StackPanel>
 	</Grid>
+	
 
 
 </Window>
