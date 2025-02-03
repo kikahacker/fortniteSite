@@ -1,4 +1,8 @@
 using Avalonia.Controls;
+using Avalonia.Interactivity;
+using System;
+using System.Threading;
+using System.Timers;
 
 namespace AvaloniaApplication3
 {
@@ -8,5 +12,15 @@ namespace AvaloniaApplication3
         {
             InitializeComponent();
         }
+        public void Next(object source, RoutedEventArgs args)
+        {
+            slides.Next();
+        }
+
+        public void Previous(object source, RoutedEventArgs args)
+        {
+            slides.Previous();
+        }
+        
     }
 }

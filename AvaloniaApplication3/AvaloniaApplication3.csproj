@@ -7,6 +7,22 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Assets\123.png" />
+    <None Remove="Assets\222.png" />
+    <None Remove="Assets\312.png" />
+    <None Remove="Assets\og-s2-line-up-1920x1080-1114b1e89809.jpg" />
+    <None Remove="Assets\pngegg.png" />
+    <None Remove="Assets\rrtt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AvaloniaResource Include="Assets\123.png" />
+    <AvaloniaResource Include="Assets\222.png" />
+    <AvaloniaResource Include="Assets\312.png" />
+    <AvaloniaResource Include="Assets\og-s2-line-up-1920x1080-1114b1e89809.jpg" />
+    <AvaloniaResource Include="Assets\pngegg.png" />
+    <AvaloniaResource Include="Assets\rrtt.png" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="11.0.10" />
